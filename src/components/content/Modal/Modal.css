@@ -1,0 +1,49 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .modal-container img{
+    border-radius: 6px;
+  }
+
+  ul li {
+    color: black;
+  }
+
+  .modalcover{
+    color: black;
+  }
+
+.modalcover img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.modalcontain{
+  display: flex;
+  flex-direction: column;
+  gap:  10px;
+}      
+
+.modalcontain p{
+  margin-bottom: 10px;
+}
+
+.modalcontain ul{
+  padding: 0px 30px;
+}
+
+@media (max-width: 600px) {
+  .modalcontain{
+    transform: translate(0px, 3vh);
+  }
+}

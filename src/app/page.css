@@ -1,0 +1,164 @@
+.face{
+    width: 500px;
+    height: 600px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    min-height: 80dvh;
+    height: 90dvh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-cover{
+    width: 95vw;
+    height: 90%;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-contain{
+    background-image: url('../assets/heroImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 32px;
+}
+
+.hero-content{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+
+.hero-left, .hero-right{
+    background-color: #f0ebe1;
+    width: fit-content;
+    padding: 20px;
+    position: absolute;
+}
+
+.hero-left{
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 30px;
+}
+
+.hero-left svg, .hero-right svg{
+    position: absolute;
+}
+
+.hero-left-one{
+    top: 0;
+    right: -30px;
+}
+
+.hero-left-two{
+    bottom: -30px;
+    left: 0;
+}
+
+.hero-left h1{
+    color: black;
+    line-height: 60px;
+}
+
+.hero-right{
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 30px;
+}
+
+.hero-right p{
+    margin-bottom: 5px;
+}
+
+.hero-right button{
+    background-color: rgba(242, 156, 51, 1);
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 10px;
+    /* margin-bottom: 5px; */
+}
+
+.hero-right-one{
+    bottom: -0.5px;
+    left: -29.6px;
+    transform: rotate(180deg);
+}
+.hero-right-two{
+    right: -1px;
+    top: -29px;
+    transform: rotate(180deg);
+}
+
+.hero-center{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.599);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    padding-left: 10px;
+}
+
+.hero-center input{
+    background-color: transparent;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.hero-center button{
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+    
+.hero-center input:focus{
+    outline: none;
+}
+
+.hero-center input::placeholder {
+    color: gray;
+    font-style: italic;
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.7; /* Change the opacity for better visibility */
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .hero-left{
+        width: 70%;
+    }
+
+    .hero-left h1{
+        color: black;
+        line-height: 30px;
+        font-size: 30px;
+    }
+
+    .hero-right p{
+        font-size: 12px;
+    }
+    
+}

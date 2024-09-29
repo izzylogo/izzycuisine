@@ -1,0 +1,102 @@
+.firstSection{
+    padding: 50px 40px;
+    position: relative;
+}
+
+.firstSection .sectionName{
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+    
+.sectionName h1{
+    color: black;
+    font-size: 30px;
+    background-color: #f0ebe1;
+    width: fit-content;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.firstsectioncover{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 60px 20px;
+    gap: 20px;
+}
+
+.firstsectioncover .item{
+    background-color: rgba(40, 40, 40, 0.448);
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.firstsectioncover .item:hover{
+    background-color: rgba(40, 40, 40, 0.671);   
+}
+
+.firstsectioncover .item img{
+    width: max-content;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.firstgrid .item{
+    margin-bottom: 10px;
+}
+
+.grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.grids h3{
+    color: black;
+    font-size: 14px;
+}
+
+.recipe-card{
+    background-color: rgba(196, 229, 252, 1);
+    background-color: rgba(159, 220, 38, 0.258);
+    background-color: rgba(255, 255, 255, 0.55);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.recipe-card img{
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+    .grids{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .firstSection{
+        padding: 50px 30px
+    }
+}
+
+@media (max-width: 500px) {
+    .grids{
+        grid-template-columns: 1fr;
+    }
+}
