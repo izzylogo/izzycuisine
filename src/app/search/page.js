@@ -93,7 +93,7 @@ export default function SearchResults() {
         </div>
 
         {/* Render Modal with selected recipe details */}
-        <SearchModal isOpen={isModalOpen} recipe={selectedRecipe} onClose={closeModal} />
+        {/*<SearchModal isOpen={isModalOpen} recipe={selectedRecipe} onClose={closeModal} />*/}
       </div>
     </div>
   );
